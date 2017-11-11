@@ -1,0 +1,66 @@
+/*=====================================Reset==========================================*/
+html, body{
+	height: 100%;
+}
+body{
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #333;
+	font-weight: 400;
+	min-width: 320px;
+}
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+a{
+	text-decoration:none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-style: 16px;
+	color: #09c;
+}
+a:hover{
+	text-decoration:none;
+	color: #09c;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+li {
+	list-style:none;
+}
+h1,h2,h3,h4,h5{
+	margin:0px;
+	color: #000;
+}
+/*=====================================Reset==========================================*/
+/*=====================================Basic==========================================*/
+.header {
+	border-bottom: 1px solid #333;
+	padding: 20px 0;
+}
+	.header span {
+		color:#53dd98;
+	}
+.nav {
+	border-bottom: 1px solid #333;
+	padding: 10px 0;
+}
+	.nav ul li {
+		float: left;
+		margin-right: 20px;
+	}
+		.nav ul li a {
+			font-size: 14px;
+		}
+.content {
+	padding: 20px 0;
+}
+/*=====================================You style======================================*/
