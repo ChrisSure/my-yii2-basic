@@ -38,6 +38,16 @@ class LogController extends Controller
 		return $this->render('log', ['dataProvider' => $dataProvider]);
 	}
 	
+	/**
+	* Очищення логів
+	*/
+	public function actionClear()
+	{
+		Logs::deleteAll();
+		Yii::$app->session->setFlash('success', 'Логи очищено !');
+		return $this->redirect(['view']);
+	}
+	
 	
 }
 

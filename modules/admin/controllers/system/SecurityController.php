@@ -148,7 +148,7 @@ class SecurityController extends Controller
         if (($model = Security::find()->where(['id' => $id])->andwhere(['count' => 5])->one()) !== null) {
             return $model;
         } else {
-        	Logs::add('Спроба звернутись до неіснуючої сторінки', __FILE__, 2); //Add log
+        	Logs::add('Спроба звернутись до неіснуючого заблокованого IP', __FILE__, 2); //Add log
             throw new NotFoundHttpException('Запитана сторінка не існує.');
         }
     }

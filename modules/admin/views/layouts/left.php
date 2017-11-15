@@ -54,6 +54,7 @@
                     		['label' => 'Інформація', 'icon' => 'info', 'url' => ['/admin/system/info']],
                     		['label' => 'Настройки', 'icon' => 'cog', 'url' => ['/admin/system/setting']],
                     		['label' => 'Логи', 'icon' => 'list-alt', 'url' => ['/admin/system/log']],
+                    		['label' => 'Кеш', 'icon' => 'braille', 'url' => ['/admin/system/cache']],
                     		['label' => 'Захист', 'icon' => 'lock', 'url' => ['/admin/security']],
                         ],
                     ],

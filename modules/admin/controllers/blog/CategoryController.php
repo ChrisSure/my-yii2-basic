@@ -165,7 +165,7 @@ class CategoryController extends Controller
         if (($model = Category::findOne($id)) !== null) {
             return $model;
         } else {
-        	Logs::add('Спроба звернутись до неіснуючої сторінки', __FILE__, 2); //Add log
+        	Logs::add('Спроба звернутись до неіснуючої категорії', __FILE__, 2); //Add log
             throw new NotFoundHttpException('Запитана сторінка не існує.');
         }
     }

@@ -1,1 +1,4 @@
-<h3><?=$category->name;?></h3>
+<? 
+use yii\helpers\Html;
+?>
+<h3><?=Html::encode($category->name);?></h3>

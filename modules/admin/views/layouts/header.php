@@ -37,18 +37,18 @@ use app\modules\admin\widgets\TopAlertWidget;
                             <img src="<?=\Yii::getAlias('@img')?>/avatar99.jpg" class="img-circle" alt="User Image"/>
 
                             <p>
-                                Taras - Web Developer
+                                <?=Html::encode(\Yii::$app->user->identity->username);?> - Web Developer
                                 <small>Member since Nov. 2012</small>
                             </p>
                         </li>
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a href="<?=Url::to(['/admin/auth/user/view', 'id' =>\Yii::$app->user->id])?>" class="btn btn-default btn-flat">Profile</a>
+                                <a href="<?=Url::to(['/admin/auth/user/view', 'id' =>\Yii::$app->user->id])?>" class="btn btn-default btn-flat">Профіль</a>
                             </div>
                             <div class="pull-right">
                                 <?= Html::a(
-                                    'Sign out',
+                                    'Вийти',
                                     ['/admin/main/logout'],
                                     ['data-method' => 'post', 'class' => 'btn btn-default btn-flat']
                                 ) ?>
@@ -59,7 +59,7 @@ use app\modules\admin\widgets\TopAlertWidget;
 
                 <!-- User Account: style can be found in dropdown.less -->
                 <li>
-                    <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                    <a href="<?=Url::home();?>" target="_" title="На сайт" ><i class="fa fa-arrow-circle-right"></i></a> <!--data-toggle="control-sidebar"-->
                 </li>
             </ul>
         </div>

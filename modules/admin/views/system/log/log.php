@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+use yii\helpers\Url;
 use yii\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\search\PagesSearch */
@@ -20,5 +21,6 @@ $this->params['breadcrumbs'][] = $this->title;
 	            'created_at:datetime',
 	        ],
 	    ]); ?>
+	    <a href="<?=Url::to(['clear'])?>" class="btn btn-danger">Очистити логи</a>
 	</div>
 </div>

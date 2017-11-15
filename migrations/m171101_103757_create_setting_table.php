@@ -23,6 +23,19 @@ class m171101_103757_create_setting_table extends Migration
             'created_at' => $this->integer(),
             'updated_at' => $this->integer(),
         ]);
+		
+		$this->insert('{{%setting}}', array(
+			'id' => 1,
+			'title'=>'Site title',
+			'description' =>'Site description',
+			'keywords' => 'Site keywords',
+			'address' => 'Site address',
+			'phone' => '0970000000',
+			'email' => 'admin@gmail.com',
+			'created_at' => 1507802191,
+			'updated_at' => 1507802191
+		));
+		
     }
 
     /**

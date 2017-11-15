@@ -32,6 +32,7 @@ return [
 	    'admin/system/info' => 'admin/system/info/view',
 	    'admin/system/setting' => 'admin/system/setting/view',
 	    'admin/system/log' => 'admin/system/log/view',
+	    'admin/system/cache' => 'admin/system/cache/view',
 	    
 	    'admin/security' => 'admin/system/security/index',
 		'admin/security/create' => 'admin/system/security/create',

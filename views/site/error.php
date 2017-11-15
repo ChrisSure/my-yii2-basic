@@ -7,11 +7,9 @@
 
 use yii\helpers\Html;
 
-$this->title = $name;
+$this->title = 'Error';
 ?>
 <div class="site-error">
-	
-    <h1><?= Html::encode($this->title) ?></h1>
 
     <div class="alert alert-danger" style="margin-top: 20px;">
         <?= nl2br(Html::encode($message)) ?>

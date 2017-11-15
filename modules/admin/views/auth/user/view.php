@@ -7,7 +7,7 @@ use app\logic\entities\auth\User;
 /* @var $this yii\web\View */
 /* @var $model app\modules\live\models\User */
 
-$this->title = 'Перегляд - ' . $model->username;
+$this->title = 'Перегляд - ' . Html::encode($model->username);
 $this->params['breadcrumbs'][] = ['label' => 'Користувачі', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

@@ -183,7 +183,7 @@ class UserController extends Controller
         if (($model = User::find()->where(['id' => $id])->one()) !== null) {
             return $model;
         } else {
-        	Logs::add('Спроба звернутись до неіснуючої сторінки', __FILE__, 2); //Add log
+        	Logs::add('Спроба звернутись до неіснуючого користувача', __FILE__, 2); //Add log
             throw new NotFoundHttpException('Запитана сторінка не існує.');
         }
     }
